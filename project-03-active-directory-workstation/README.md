@@ -8,6 +8,7 @@ The project also demonstrates DNS troubleshooting, Active Directory security gro
 
 A key focus of this project was troubleshooting real-world configuration issues rather than simply completing a successful configuration.
 
+
 ---
 
 ## Lab Environment
