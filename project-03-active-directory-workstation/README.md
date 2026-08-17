@@ -359,3 +359,53 @@ The project also demonstrated the importance of troubleshooting each layer indep
 **Completed ✅**
 
 The Windows 11 workstation is successfully integrated into the `hectortech.local` Active Directory environment, and role-based access to the IT network resource has been successfully tested and validated.
+
+---
+
+## Evidence & Screenshots
+
+### 1. Domain-Joined Workstation
+
+The Windows 11 workstation was successfully joined to the `hectortech.local` Active Directory domain.
+
+![HT-WS01 Domain Membership](screenshots/01-domain-joined-workstation.png)
+
+---
+
+### 2. Domain Authentication
+
+The workstation successfully authenticated `barbara.hector` through the `HT-DC01` domain controller.
+
+![Domain Authentication](screenshots/02-domain-authentication.png)
+
+---
+
+### 3. Active Directory Security Group
+
+The authenticated user's security token successfully included the `IT-Support` security group.
+
+![IT-Support Security Group](screenshots/03-security-group-membership.png)
+
+---
+
+### 4. NTFS Permissions
+
+The `IT-Support` security group was assigned Modify permissions to the IT folder.
+
+![NTFS Permissions](screenshots/04-ntfs-permissions.png)
+
+---
+
+### 5. SMB Network Share
+
+The IT folder was successfully accessed remotely from HT-WS01 through the SMB network share.
+
+![SMB Network Share](screenshots/05-smb-network-share.png)
+
+---
+
+### 6. Successful File Modification
+
+The domain user successfully created and modified a file through the network share, validating the configured access permissions.
+
+![Successful File Modification](screenshots/06-successful-file-modification.png)
